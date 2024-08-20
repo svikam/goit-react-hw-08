@@ -1,0 +1,6 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px dotted rgb(33, 107, 203);
+    padding: 20px;
+}
