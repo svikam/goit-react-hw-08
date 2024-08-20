@@ -1,0 +1,50 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    border: 1.5px solid black;
+    width: 280px;
+    border-radius: 5px;
+    padding: 0 10px 10px;
+    margin: 0 auto;
+}
+
+.label {
+    margin: 15px 0 0 0;
+}
+
+.field {
+    width: 100%;
+    margin: 0 auto;
+    border: 1.5px solid gray;
+    padding: 5px 0;
+    margin-top: 5px;
+    &:focus,
+    &:active,
+    &:hover {
+        border: 3px solid rgb(151, 202, 234);
+    }
+    &::placeholder {
+        padding-left: 5px;
+    }
+}
+
+.signUp {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    width: 90px;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-family: inherit;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: rgb(151, 202, 234);
+    &:hover {
+        scale: 1.2;
+    }
+}

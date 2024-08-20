@@ -9,15 +9,9 @@ const UserMenu = () => {
     const isLoggedIn = useSelector(selectIsLoggedIn);
     const dispatch = useDispatch();
     return (
-        <div>
-            <p>Welcome, {user.name} !</p>
-            <ul className={s.userMenuList}>
-                <li>
-                    <NavLink to="/">Home</NavLink>
-                </li>
-                <li>
-                    <NavLink to="/contacts">Contacts</NavLink>
-                </li>
+        <div className={s.container}>
+            <p className={s.welcome}>Welcome, {user.name} !</p>
+            <ul>
                 {!isLoggedIn && (
                     <>
                         <li>
@@ -30,7 +24,7 @@ const UserMenu = () => {
                 )}
                 {isLoggedIn && (
                     <li>
-                        <button onClick={() => dispatch(logoutThunk())}>Exit</button>
+                        <button className={s.btn} onClick={() => dispatch(logoutThunk())}>Exit</button>
                     </li>
                 )}
             </ul>

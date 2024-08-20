@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.btn {
+    font-family: inherit;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-right: 10px;
+    background-color: rgb(151, 202, 234);
+    &:hover {
+        scale: 1.2;
+        background-color: rgb(246, 179, 71);
+    }
+}
